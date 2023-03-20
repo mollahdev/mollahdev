@@ -11,3 +11,8 @@ export default defineComponent({
   components: { HeaderNavigation },
 });
 </script>
+<style lang="scss">
+body {
+  @apply bg-black font-primary text-base text-[#c3eed7];
+}
+</style>
