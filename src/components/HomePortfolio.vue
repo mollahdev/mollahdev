@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#222222]">
+  <section class="bg-[#222222] overflow-hidden">
     <div>
       <MarqueeText
         class="text-2xl font-light py-8 inline-block border-b border-dashed border-b-[#565656]"
