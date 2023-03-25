@@ -1,6 +1,8 @@
 <template>
-  <nav class="fixed z-20 top-5 left-0 w-full" ref="header">
+  <nav class="fixed z-20 top-5 left-0 w-full">
     <div
+      data-aos="fade-down"
+      data-aos-delay="400"
       class="container flex items-center px-10 py-4 justify-between mx-auto rounded-md bg-[#323232]"
     >
       <picture>
@@ -39,18 +41,9 @@
 </template>
 
 <script lang="ts">
-import { gsap } from "gsap";
 import { defineComponent } from "vue";
 export default defineComponent({
   name: "HeaderNavigation",
-  mounted() {
-    gsap.from(this.$refs.header as HTMLElement, {
-      duration: 1,
-      y: "-150px",
-      opacity: 0,
-      ease: "expo.out",
-    });
-  },
 });
 </script>
 <style lang="scss" scoped>

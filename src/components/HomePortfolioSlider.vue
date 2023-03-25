@@ -1,6 +1,10 @@
 <template>
   <!-- Slider main container -->
-  <div class="swiper h-screen portfolio-slider">
+  <div
+    data-aos-duration="800"
+    data-aos="fade-up"
+    class="swiper h-screen portfolio-slider"
+  >
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->

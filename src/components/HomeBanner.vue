@@ -18,18 +18,25 @@
     </div>
     <div class="absolute left-0 top-0 w-full h-full z-10 flex items-center">
       <div class="container px-3 mx-auto text-center">
-        <p ref="subTitle" class="font-light text-lg sm:text-xl">
+        <p
+          class="font-light text-lg sm:text-xl"
+          data-aos="zoom-in"
+          data-aos-delay="900"
+        >
           Assalamu Alaikum, I'm
         </p>
         <h1
-          ref="bannerTitle"
+          data-aos-duration="800"
+          data-aos="fade-up"
+          data-aos-delay="1000"
           class="font-black text-[#e7faec] text-3xl md:text-7xl leading-[1.3] md:leading-[1.1] mt-3 uppercase"
         >
           Ashraf Mollah<span class="font-light">/</span> <br />
           Frontend Developer
         </h1>
         <p
-          ref="bannerDescription"
+          data-aos="fade-up"
+          data-aos-delay="900"
           class="text-white sm:text-lg max-w-5xl font-light mt-5 sm:mt-2 mx-auto"
         >
           <strong class="font-semibold">Md Ashraful Mollah</strong> — Working as
@@ -42,32 +49,8 @@
   </section>
 </template>
 <script lang="ts">
-import { gsap } from "gsap";
 import { defineComponent } from "vue";
 export default defineComponent({
   name: "HomeBanner",
-  mounted() {
-    gsap.from(this.$refs.subTitle as HTMLElement, {
-      duration: 1.2,
-      opacity: 0,
-      scale: 0.8,
-      ease: "expo.in",
-    });
-
-    gsap.from(this.$refs.bannerTitle as HTMLElement, {
-      duration: 0.8,
-      y: "130px",
-      opacity: 0,
-      delay: 0.5,
-    });
-
-    gsap.from(this.$refs.bannerDescription as HTMLElement, {
-      duration: 2,
-      y: "50px",
-      opacity: 0,
-      delay: 0.6,
-      ease: "expo.out",
-    });
-  },
 });
 </script>

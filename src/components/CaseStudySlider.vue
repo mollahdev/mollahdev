@@ -1,6 +1,10 @@
 <template>
   <!-- Slider main container -->
-  <div class="swiper case-study-slider">
+  <div
+    class="swiper case-study-slider"
+    data-aos-duration="800"
+    data-aos="fade-in"
+  >
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
