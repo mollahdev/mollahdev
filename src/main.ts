@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import App from "@/App.vue";
 import router from "@/router";
 import store from "@/store";
+import "swiper/css";
 import "@/assets/scss/fonts.scss";
 import "@/assets/scss/tailwind.scss";
 

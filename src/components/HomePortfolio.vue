@@ -1,14 +1,6 @@
 <template>
   <section class="bg-[#222222] overflow-hidden">
-    <div>
-      <MarqueeText
-        class="text-2xl font-light py-8 inline-block border-b border-dashed border-b-[#565656]"
-      >
-        ReactJs — VueJs — NextJs - Material UI — Gutenberg — TailwindCSS —
-        WordPress — TypeScript — JavaScript — Jest — SCSS — Web Component —
-        Redux — Elementor — GruntJS — WP Scripts — Gulp — HTML — CSS —
-      </MarqueeText>
-    </div>
+    <SkillMarquee />
     <div class="container mx-auto py-20">
       <div class="grid grid-cols-[1fr_3fr]">
         <div>
@@ -17,9 +9,9 @@
         <div>
           <h2
             ref="projectTitle"
-            class="font-light text-5xl text-[#e7faec] leading-[1.2]"
+            class="font-light text-5xl text-[#e7faec] uppercase leading-[1.2]"
           >
-            <strong class="font-bold">PROJETS</strong> — BRANDING/<br />
+            <strong class="font-bold">PROJETS</strong> — Apps/<br />
             WEBSITE DESIGN
           </h2>
           <p
@@ -32,7 +24,7 @@
           </p>
           <div ref="projectButton">
             <router-link
-              class="inline-block text-sm font-semibold border-solid border-2 border-[#c3eed7] hover:bg-[#c3eed7] hover:text-[#222] rounded-full pt-3.5 pb-3 px-8 mt-5 transition-colors duration-300"
+              class="inline-block text-sm font-regular border-solid border-2 border-[#c3eed7] hover:bg-[#c3eed7] hover:text-[#222] rounded-full pt-3.5 pb-3 px-8 mt-5 transition-colors duration-300"
               to="/portfolio"
               >All My Projects</router-link
             >
@@ -45,12 +37,12 @@
 <script lang="ts">
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import MarqueeText from "vue-marquee-text-component";
+import SkillMarquee from "@/components/SkillMarquee.vue";
 import { defineComponent } from "vue";
 export default defineComponent({
   name: "HomePortfolio",
   components: {
-    MarqueeText,
+    SkillMarquee,
   },
   mounted() {
     gsap.registerPlugin(ScrollTrigger);

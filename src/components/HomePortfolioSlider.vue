@@ -15,7 +15,7 @@
         >
           <img
             :src="project.image"
-            alt="Space-exploration-thunbail-project"
+            alt="project-thumbnail"
             loading="lazy"
             width="843"
             height="972"
@@ -33,17 +33,28 @@
       </div>
     </div>
     <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-scrollbar"></div>
+    <div class="portfolio-prev-btn left-9">
+      <svg viewBox="0 0 100 100" width="30">
+        <path
+          d="M95.849,46.323H14.1L40.364,20.15a4.166,4.166,0,0,0-5.9-5.881L1.076,47.537a4.162,4.162,0,0,0,0,5.891L34.462,86.7a4.166,4.166,0,0,0,5.9-5.881L14.1,54.642H95.849A4.159,4.159,0,1,0,95.849,46.323Z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </div>
+    <div class="portfolio-next-btn right-9">
+      <svg viewBox="0 0 100 100" width="30">
+        <path
+          d="M95.849,46.323H14.1L40.364,20.15a4.166,4.166,0,0,0-5.9-5.881L1.076,47.537a4.162,4.162,0,0,0,0,5.891L34.462,86.7a4.166,4.166,0,0,0,5.9-5.881L14.1,54.642H95.849A4.159,4.159,0,1,0,95.849,46.323Z"
+          transform="translate(100, 100) rotate(180) "
+          fill="currentColor"
+        ></path>
+      </svg>
+    </div>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
 import Swiper, { Navigation } from "swiper";
-
-import "swiper/css";
-import "swiper/css/navigation";
 
 export default defineComponent({
   name: "HomePortfolioSlider",
@@ -65,27 +76,27 @@ export default defineComponent({
         {
           title: "Space",
           subtitle: "space subtitle",
-          image: require("@/assets/images/Space-exploration-thunbail-project.webp"),
+          image: require("@/assets/images/Neutron-thumbnail.webp"),
           link: "#",
         },
         {
           title: "Space",
           subtitle: "space subtitle",
-          image: require("@/assets/images/Space-exploration-thunbail-project.webp"),
+          image: require("@/assets/images/Botchi-thunbail-project.webp"),
           link: "#",
         },
       ],
     };
   },
   mounted() {
-    new Swiper(".swiper", {
+    new Swiper(".portfolio-slider", {
       modules: [Navigation],
       slidesPerView: 2,
-      speed: 800,
+      speed: 600,
       loop: true,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".portfolio-next-btn",
+        prevEl: ".portfolio-prev-btn",
       },
     });
   },
@@ -94,6 +105,11 @@ export default defineComponent({
 <style lang="scss" scoped>
 .portfolio-slider .swiper-wrapper:hover a {
   @apply opacity-40;
+}
+
+.portfolio-next-btn,
+.portfolio-prev-btn {
+  @apply absolute top-1/2 -translate-y-1/2 z-10 text-white text-opacity-95 h-10 w-10 flex items-center justify-center cursor-pointer;
 }
 
 a:hover {

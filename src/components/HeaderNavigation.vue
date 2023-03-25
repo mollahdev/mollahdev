@@ -1,7 +1,7 @@
 <template>
   <nav class="fixed z-20 top-5 left-0 w-full" ref="header">
     <div
-      class="container flex items-center px-10 py-4 justify-between mx-auto backdrop-blur-3xl borde rounded-md bg-[#c3eed7] bg-opacity-10"
+      class="container flex items-center px-10 py-4 justify-between mx-auto rounded-md bg-[#323232]"
     >
       <picture>
         <img
