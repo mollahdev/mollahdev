@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed z-20 top-5 left-0 w-full">
+  <nav class="fixed z-20 top-5 left-0 w-full px-3">
     <div
       data-aos="fade-down"
       data-aos-delay="400"
@@ -15,25 +15,14 @@
         />
       </picture>
       <div
-        class="flex flex-wrap items-center gap-8 text-white text-[12px] uppercase"
+        class="hidden md:flex flex-wrap items-center gap-8 text-white text-[12px] uppercase"
       >
-        <router-link class="inline-block transition-colors duration-300" to="/"
-          >Home</router-link
-        >
         <router-link
           class="inline-block transition-colors duration-300"
-          to="/portfolio"
-          >Portfolio</router-link
-        >
-        <router-link
-          class="inline-block transition-colors duration-300"
-          to="/about"
-          >About</router-link
-        >
-        <router-link
-          class="inline-block transition-colors duration-300"
-          to="/contact"
-          >Contact</router-link
+          :to="menu.to"
+          :key="index"
+          v-for="(menu, index) in menus"
+          >{{ menu.label }}</router-link
         >
       </div>
     </div>
@@ -44,6 +33,28 @@
 import { defineComponent } from "vue";
 export default defineComponent({
   name: "HeaderNavigation",
+  data() {
+    return {
+      menus: [
+        {
+          label: "Home",
+          to: "/",
+        },
+        {
+          label: "Portfolio",
+          to: "/portfolio",
+        },
+        {
+          label: "About",
+          to: "/about",
+        },
+        {
+          label: "Contact",
+          to: "/contact",
+        },
+      ],
+    };
+  },
 });
 </script>
 <style lang="scss" scoped>
