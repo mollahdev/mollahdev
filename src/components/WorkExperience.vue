@@ -94,20 +94,6 @@
       </div>
     </div>
   </section>
-  <h1>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sed
-    minima consequatur placeat expedita molestiae corrupti aliquam laborum.
-    Distinctio doloremque ducimus doloribus corporis, excepturi, error modi est
-    rem cum magni consequuntur, aliquam quidem consequatur dolores alias ea
-    dignissimos? Blanditiis vitae officiis exercitationem numquam eaque
-    architecto? Consequatur, ipsam eligendi? Delectus inventore rerum labore
-    expedita accusamus tempora, molestias maiores necessitatibus a distinctio
-    optio soluta eius non dolore, laboriosam et sequi odio! Incidunt ipsa
-    quidem, ut ullam, magni laudantium nam adipisci maxime nostrum eveniet
-    corporis temporibus enim dolorem quibusdam veritatis ab accusamus tempora.
-    Recusandae molestias officia quos ipsa reiciendis, repudiandae velit ullam
-    doloribus.
-  </h1>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";

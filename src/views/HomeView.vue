@@ -3,6 +3,7 @@
   <HomePortfolio />
   <HomePortfolioSlider />
   <WorkExperience />
+  <FooterTop />
 </template>
 
 <script lang="ts">
@@ -11,6 +12,7 @@ import HomeBanner from "@/components/HomeBanner.vue";
 import HomePortfolio from "@/components/HomePortfolio.vue";
 import HomePortfolioSlider from "@/components/HomePortfolioSlider.vue";
 import WorkExperience from "@/components/WorkExperience.vue";
+import FooterTop from "@/components/FooterTop.vue";
 export default defineComponent({
   name: "HomeView",
   components: {
@@ -18,6 +20,7 @@ export default defineComponent({
     HomePortfolio,
     HomePortfolioSlider,
     WorkExperience,
+    FooterTop,
   },
 });
 </script>
