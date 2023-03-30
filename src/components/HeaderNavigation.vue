@@ -3,7 +3,7 @@
     <div
       data-aos="fade-down"
       data-aos-delay="400"
-      class="container flex items-center px-10 py-4 justify-between mx-auto rounded-md bg-[#323232]"
+      class="container flex items-center px-4 md:px-10 py-3 md:py-4 justify-between mx-auto rounded-md bg-[#323232]"
     >
       <picture>
         <img

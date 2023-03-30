@@ -1,18 +1,20 @@
 <template>
-  <section class="case-study bg-[#efefef] py-20 px-3 text-[#323232]">
+  <section class="case-study bg-[#efefef] py-0 md:py-20 px-3 text-[#323232]">
     <div class="container mx-auto text-center">
-      <div class="border brder-y border-x-0 border-solid border-[#cccccc] py-5">
+      <div
+        class="border brder-y border-x-0 border-solid border-[#cccccc] pt-16 md:pt-5 py-5"
+      >
         <p
           data-aos-duration="900"
           data-aos="fade-up"
-          class="text-lg uppercase font-light opacity-80"
+          class="text-sm sm:text-lg uppercase font-light opacity-80"
         >
           Work Experience
         </p>
         <h2
           data-aos-duration="800"
           data-aos="fade-up"
-          class="uppercase text-5xl mt-2 font-light"
+          class="uppercase text-2xl sm:text-5xl mt-2 font-light"
         >
           <strong class="font-bold">Companies</strong> — Work / Contribution
         </h2>
@@ -20,7 +22,7 @@
       <div
         data-aos-duration="800"
         data-aos="fade-up"
-        class="flex items-center justify-center gap-[100px] py-12"
+        class="flex items-center justify-center gap-5 md:gap-[100px] py-12"
       >
         <a
           target="_blank"
@@ -51,33 +53,35 @@
       </p>
       <div data-aos="fade-up">
         <router-link
-          class="inline-block text-sm font-semibold border-solid border border-[#323232] hover:bg-[#323232] hover:text-white rounded-full pt-3.5 pb-3 px-8 mt-5 transition-colors duration-300"
+          class="inline-block text-sm sm:font-semibold border-solid border border-[#323232] hover:bg-[#323232] hover:text-white rounded-full pt-2.5 py-2 px-5 sm:pt-3.5 sm:pb-3 sm:px-8 mt-5 transition-colors duration-300"
           to="/portfolio"
           >All Case Study</router-link
         >
       </div>
     </div>
     <div
-      class="container mx-auto pt-20 border-t mt-20 border-solid border-[#cccccc]"
+      class="container mx-auto pt-10 mt-10 md:pt-20 border-t md:mt-20 border-solid border-[#cccccc]"
     >
-      <div class="grid grid-cols-[1fr_3fr]">
+      <div class="grid md:grid-cols-[1fr_3fr]">
         <div>
-          <p class="text-base uppercase">Experience</p>
+          <p class="text-base sm:text-base uppercase">Experience</p>
         </div>
         <div>
           <h2
             data-aos-duration="800"
             data-aos="fade-right"
-            class="font-light text-5xl text-[#323232] uppercase leading-[1.2]"
+            class="font-light text-2xl sm:text-3xl py-2 md:text-5xl text-[#323232] uppercase leading-[1.3]"
           >
             <strong class="font-bold">SERVICES</strong> — MORE THAN 5 <br />
             YEARS OF EXPERIENCE
           </h2>
-          <div class="pt-10 grid grid-cols-3 gap-10">
+          <div
+            class="pt-5 md:pt-10 pb-16 md:pb-0 grid md:grid-cols-3 gap-5 md:gap-10"
+          >
             <div :key="index" v-for="(info, index) in workInfo">
               <h2
                 data-aos="fade-up"
-                class="font-semibold text-lg pb-1 text-[#323232]"
+                class="font-semibold text-base md:text-lg pb-1 text-[#323232]"
               >
                 {{ info.title }}
               </h2>

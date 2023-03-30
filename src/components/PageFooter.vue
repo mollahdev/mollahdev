@@ -6,7 +6,7 @@
         <h2
           data-aos-duration="800"
           data-aos="fade-right"
-          class="font-light text-2xl text-[#e7faec] uppercase leading-[1.4]"
+          class="font-light text-lg sm:text-2xl text-[#e7faec] uppercase leading-[1.4]"
         >
           <strong class="font-bold">ashraf Mollah</strong> — GRAPHISTE /<br />
           WEB DESIGNER FREELANCE —<br />
@@ -14,7 +14,7 @@
         </h2>
         <div data-aos-duration="400" data-aos="fade-right">
           <router-link
-            class="inline-block uppercase text-sm font-semibold border-solid border border-[#c3eed7] hover:bg-[#c3eed7] hover:text-[#222] rounded-full pt-3.5 pb-3 px-8 mt-5 transition-colors duration-300"
+            class="inline-block uppercase text-sm sm:font-semibold border-solid border border-[#c3eed7] hover:bg-[#c3eed7] hover:text-[#222] rounded-full pt-2.5 py-2 px-5 sm:pt-3.5 sm:pb-3 sm:px-8 mt-5 transition-colors duration-300"
             to="/portfolio"
             >Send an Email</router-link
           >

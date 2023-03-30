@@ -13,7 +13,7 @@
         :key="index"
         v-for="(project, index) in projects"
       >
-        <a :href="project.link" class="inline-flex items-center justify-center">
+        <div class="inline-flex items-center justify-center">
           <img
             :src="project.image"
             alt="project-thumbnail"
@@ -21,17 +21,17 @@
             width="900"
             height="768"
           />
-        </a>
+        </div>
       </div>
     </div>
     <!-- If we need pagination -->
     <div class="case-study-pagination swiper-pagination py-5"></div>
     <!-- If we need navigation buttons -->
     <div
-      class="case-study-prev-btn left-0 absolute w-1/2 top-0 h-[calc(100%_-_110px)] z-10 cursor-pointer"
+      class="case-study-prev-btn left-0 absolute w-1/2 top-0 h-[calc(100%_-_50px)] sm:h-[calc(100%_-_110px)] z-10 cursor-pointer"
     ></div>
     <div
-      class="case-study-next-btn right-0 absolute w-1/2 top-0 h-[calc(100%_-_110px)] z-10 cursor-pointer"
+      class="case-study-next-btn right-0 absolute w-1/2 top-0 h-[calc(100%_-_50px)] sm:h-[calc(100%_-_110px)] z-10 cursor-pointer"
     ></div>
   </div>
 </template>

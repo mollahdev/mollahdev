@@ -3,7 +3,7 @@
   <div
     data-aos-duration="800"
     data-aos="fade-up"
-    class="swiper h-screen portfolio-slider"
+    class="swiper h-[400px] md:h-screen portfolio-slider"
   >
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
@@ -28,16 +28,20 @@
           <div
             class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 text-center"
           >
-            <h3 class="text-white text-xl font-semibold mb-1 uppercase">
+            <h3
+              class="text-white text-base sm:text-xl font-semibold mb-1 uppercase"
+            >
               {{ project.title }}
             </h3>
-            <p class="font-light text-base uppercase">{{ project.subtitle }}</p>
+            <p class="font-light text-[12px] sm:text-base uppercase">
+              {{ project.subtitle }}
+            </p>
           </div>
         </a>
       </div>
     </div>
     <!-- If we need navigation buttons -->
-    <div class="portfolio-prev-btn left-9">
+    <div class="portfolio-prev-btn left-4 sm:left-9">
       <svg viewBox="0 0 100 100" width="30">
         <path
           d="M95.849,46.323H14.1L40.364,20.15a4.166,4.166,0,0,0-5.9-5.881L1.076,47.537a4.162,4.162,0,0,0,0,5.891L34.462,86.7a4.166,4.166,0,0,0,5.9-5.881L14.1,54.642H95.849A4.159,4.159,0,1,0,95.849,46.323Z"
@@ -45,7 +49,7 @@
         ></path>
       </svg>
     </div>
-    <div class="portfolio-next-btn right-9">
+    <div class="portfolio-next-btn right-4 sm:right-9">
       <svg viewBox="0 0 100 100" width="30">
         <path
           d="M95.849,46.323H14.1L40.364,20.15a4.166,4.166,0,0,0-5.9-5.881L1.076,47.537a4.162,4.162,0,0,0,0,5.891L34.462,86.7a4.166,4.166,0,0,0,5.9-5.881L14.1,54.642H95.849A4.159,4.159,0,1,0,95.849,46.323Z"
