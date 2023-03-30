@@ -17,9 +17,17 @@ export default defineComponent({
     PageFooter,
     BackToTop,
   },
+  created() {
+    document.title = "Ashraf Mollah - Frontend Developer";
+  },
 });
 </script>
 <style lang="scss">
+html,
+body {
+  scroll-padding-top: 65px; /* set to the height of your header */
+}
+
 body {
   @apply bg-black font-primary text-base text-[#c3eed7] overflow-x-hidden;
 }

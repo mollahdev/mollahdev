@@ -84,11 +84,8 @@
       <p
         class="text-white px-4 text-[12px] border-t-[.3px] border-opacity-40 border-solid border-t-[#ccc] font-light py-8 text-opacity-80"
       >
-        Website made in Belgium with ♥ by Samuel Scalzo — © Scalzodesign / 2023
-        / All rights reserved.
-        <router-link class="text-white text-opacity-100 underline" to="#"
-          >Privacy Policy</router-link
-        >
+        Website is developed by Ashraf Mollah — © Ashraf / 2023 / All rights
+        reserved
       </p>
     </div>
   </footer>
