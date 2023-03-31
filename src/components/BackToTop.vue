@@ -3,7 +3,7 @@
     data-aos-duration="600"
     data-aos="fade-up"
     @click="backToTop"
-    class="fixed right-5 rounded-md bg-white w-10 h-10 border border-[#ccc] z-30 flex justify-center items-center text-black cursor-pointer bottom-16"
+    class="fixed right-5 rounded-md bg-white w-10 h-10 border border-[#ccc] z-30 flex justify-center items-center text-black cursor-pointer bottom-8 md:bottom-16"
   >
     <svg
       x="0px"
